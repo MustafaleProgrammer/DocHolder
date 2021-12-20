@@ -6,7 +6,7 @@ class FrontScreen extends Component {
         super(props);
         this.state = {
         }
-        
+
     }
 
     render() {
@@ -15,27 +15,26 @@ class FrontScreen extends Component {
 
                 {/* Title */}
                 <div class="jumbotron">
-                    <h3 class="display-5">Fuel + Mileage Tracker</h3>
+                    <h3 class="display-5">Document Holder</h3>
                 </div>
 
-                {/* RecordFuel Button */}
-                <div class="card">
-                    <Button theme="RecordButton" onClick={this.props.recordFuelToggle}>
-                        Record Fuel
-                    </Button>
+                {/* Select Car Drop Down*/}
+                <div>
+                    <label>
+                        Select Car:
+                        <select>
+                            <option value="car1">Car1</option>
+                            <option value="car2">Car2</option>
+                            <option value="car3">Car3</option>
+                            <option value="car4">Car4</option>
+                        </select>
+                    </label>
                 </div>
 
-                {/* RecordMileage Button */}
-                <div class="card">
-                    <Button theme="RecordButton" onClick={this.props.recordMileageToggle}>
-                        Record Mileage
-                    </Button>
-                </div>
-
-                {/* ShowResults Button */}
-                <div class="card">
-                    <Button theme="ResultsButton" onClick={this.props.resultsScreenToggle}>
-                        View Results
+                {/* Additional Personal Information */}
+                <div>
+                    <Button theme="AdditionalButton" onClick={this.props.recordMileageToggle}>
+                        Additional Information
                     </Button>
                 </div>
             </div>

@@ -10,7 +10,7 @@ class RecordMileage extends Component {
 
     }
 
-      }
+  }
 
 
   render() {
@@ -26,36 +26,30 @@ class RecordMileage extends Component {
 
           {/* Title */}
           <div class="jumbotron">
-            <h3 class="display-5"> Mileage Tracker</h3>
+            <h3 class="display-5"> Additional Documents</h3>
           </div>
-        </div>
-
-        {/* Select Car */}
-        <div>
-          <label>
-            Select Car:
-            <select>
-              <option value="car1">Car1</option>
-              <option value="car2">Car2</option>
-              <option value="car3">Car3</option>
-              <option value="car4">Car4</option>
-            </select>
-          </label>
-        </div>
-
-        {/* Miles Driven Input*/}
-        <form>
-          <label>
-            Miles Driven:
-            <input type="number" name="miles" placeholder="Enter Miles" />
-          </label>
+          {/* Odometer Button */}
+          <Button theme="OdometerButton" onClick={this.props.frontScreenToggle}>
+            Odometer
+          </Button>
           <br />
-        </form>
+          <Button theme="OdometerButton" onClick={this.props.frontScreenToggle}>
+            MOT
+          </Button>
+          <br />
+          <Button theme="OdometerButton" onClick={this.props.frontScreenToggle}>
+            Insurance
+          </Button>
+          <br />
+          <Button theme="OdometerButton" onClick={this.props.frontScreenToggle}>
+            Parking
+          </Button>
+          <br />
+          <Button theme="OdometerButton" onClick={this.props.frontScreenToggle}>
+            EV Charging
+          </Button>
 
-        Time and Date Picker
-        <br />
-        Upload Picture
-
+        </div>
       </div>
     );
   }
